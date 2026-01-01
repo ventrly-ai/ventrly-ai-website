@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ventrly - מערכת אבטחה חכמה מבוססת AI. הפכו את המצלמות שלכם למערכת אבטחה חכמה.">
+    <link rel="icon" type="image/jpeg" href="./images/LOGO.jpg">
+    <title>Ventrly</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="images/111 (1).jpg" alt="VENTRY Logo" height="50" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#home">בית</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">איך זה עובד</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#security">אבטחה</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#benefits">יתרונות</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section d-flex align-items-center text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="hero-badge mb-3">
+                        <i class="bi bi-stars"></i> טכנולוגיית AI מתקדמת
+                    </div>
+                    <h1 class="display-3 fw-bold mb-4 text-dark">
+                        הפכו את המצלמות שלכם<br>
+                        <span class="text-gradient">למערכת אבטחה חכמה</span>
+                    </h1>
+                    <p class="lead text-muted mb-5">
+                        Ventrly משדרגת מצלמות קיימות בעזרת AI כדי לזהות פריצות בזמן אמת.<br>
+                        ללא חומרה יקרה. ללא התראות שווא. פשוט שקט נפשי.
+                    </p>
+                    
+                    <!-- Waitlist Form -->
+                    <div class="row justify-content-center" id="join">
+                        <div class="col-md-8 col-lg-6">
+                            <form id="waitlistForm" class="waitlist-form shadow-lg p-3 bg-white rounded-4">
+                                <div class="input-group input-group-lg">
+                                    <input type="email" class="form-control border-0" id="emailInput" placeholder="הכנס כתובת מייל להצטרפות..." required>
+                                    <button type="submit" class="btn btn-accent px-4">
+                                        הצטרפו עכשיו <i class="bi bi-arrow-left ms-2"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            
+                            <div id="successMessage" class="alert alert-success mt-3 d-none">
+                                <i class="bi bi-check-circle-fill"></i> תודה שנרשמת! נעדכן אותך בקרוב.
+                            </div>
+                            
+                            <div id="errorMessage" class="alert alert-danger mt-3 d-none">
+                                <i class="bi bi-exclamation-circle-fill"></i> אופס! משהו השתבש. נסה שוב.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="mt-4 text-muted small">
+                        <i class="bi bi-people-fill"></i> הצטרפו למאות עסקים שכבר נרשמו לרשימת ההמתנה
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-accent text-dark mb-3">פשוט וקל</span>
+                <h2 class="fw-bold display-5 mb-3">פשטות של Plug & Play</h2>
+                <p class="text-muted lead">איך המערכת עובדת ב-3 צעדים פשוטים</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-hover p-4 text-center">
+                        <div class="feature-number">01</div>
+                        <div class="icon-box mb-4 mx-auto"><i class="bi bi-webcam-fill fs-1"></i></div>
+                        <h4 class="fw-bold mb-3">מחברים</h4>
+                        <p class="text-muted">מחברים את המצלמות הקיימות שלכם (IP/DVR) למערכת הענן שלנו בדקות.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-hover p-4 text-center">
+                        <div class="feature-number">02</div>
+                        <div class="icon-box mb-4 mx-auto"><i class="bi bi-cpu-fill fs-1"></i></div>
+                        <h4 class="fw-bold mb-3">מפעילים</h4>
+                        <p class="text-muted">ה-AI שלנו מנתח את הווידאו ומזהה כניסות אדם בזמן אמת.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-hover p-4 text-center">
+                        <div class="feature-number">03</div>
+                        <div class="icon-box mb-4 mx-auto"><i class="bi bi-phone-vibrate-fill fs-1"></i></div>
+                        <h4 class="fw-bold mb-3">מקבלים התראה</h4>
+                        <p class="text-muted">במידה וזוהתה כניסה חשודה, נשלחת התראה מיידית לנייד.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section id="security" class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold display-5 mb-4">
+                        הנתונים שלכם<br><span class="text-gradient">מוגנים בטכנולוגיה מתקדמת</span>
+                    </h2>
+                    <p class="text-muted lead mb-4">
+                        אנחנו מבינים שאבטחה היא לא רק זיהוי פריצות - זה גם הגנה על הפרטיות שלכם.
+                    </p>
+                    
+                    <div class="security-features">
+                        <div class="security-item mb-3">
+                            <div class="d-flex align-items-start">
+                                <div class="security-icon me-3"><i class="bi bi-lock-fill"></i></div>
+                                <div>
+                                    <h5 class="fw-bold mb-2">הצפנה מלאה</h5>
+                                    <p class="text-muted mb-0">כל הנתונים מוצפנים ב-AES-256.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="security-item mb-3">
+                            <div class="d-flex align-items-start">
+                                <div class="security-icon me-3"><i class="bi bi-cloud-check-fill"></i></div>
+                                <div>
+                                    <h5 class="fw-bold mb-2">אחסון בענן מאובטח</h5>
+                                    <p class="text-muted mb-0">שרתי Google Cloud עם גיבויים אוטומטיים.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="security-visual p-5 rounded-4">
+                        <div class="text-center">
+                            <i class="bi bi-shield-fill-check display-1 text-accent mb-4"></i>
+                            <h3 class="fw-bold mb-3">מוגן על ידי</h3>
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <div class="badge-security bg-white p-3 rounded-3">
+                                        <i class="bi bi-google text-primary fs-2"></i>
+                                        <p class="small mb-0 mt-2 fw-bold">Google Cloud</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="badge-security bg-white p-3 rounded-3">
+                                        <i class="bi bi-lock-fill text-danger fs-2"></i>
+                                        <p class="small mb-0 mt-2 fw-bold">AES-256</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-accent text-dark mb-3">למה Ventrly?</span>
+                <h2 class="fw-bold display-5 mb-3">היתרונות שלנו</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="benefit-card text-center p-4">
+                        <div class="benefit-icon mb-3"><i class="bi bi-piggy-bank-fill"></i></div>
+                        <h5 class="fw-bold mb-2">חיסכון עצום</h5>
+                        <p class="text-muted small mb-0">משתמשים במצלמות קיימות</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="benefit-card text-center p-4">
+                        <div class="benefit-icon mb-3"><i class="bi bi-lightning-charge-fill"></i></div>
+                        <h5 class="fw-bold mb-2">התקנה מהירה</h5>
+                        <p class="text-muted small mb-0">מוכנים תוך 15 דקות</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="benefit-card text-center p-4">
+                        <div class="benefit-icon mb-3"><i class="bi bi-graph-up-arrow"></i></div>
+                        <h5 class="fw-bold mb-2">דיוק גבוה</h5>
+                        <p class="text-muted small mb-0">95% דיוק זיהוי</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="benefit-card text-center p-4">
+                        <div class="benefit-icon mb-3"><i class="bi bi-clock-history"></i></div>
+                        <h5 class="fw-bold mb-2">24/7 ניטור</h5>
+                        <p class="text-muted small mb-0">עובד סביב השעון</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <p class="text-white-50">מערכת אבטחה חכמה מבוססת AI</p>
+                </div>
+                
+                <div class="col-lg-6 text-lg-end">
+                    <div class="d-flex gap-3 justify-content-lg-end">
+                        <a href="https://www.linkedin.com/company/ventrly" target="_blank" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <div class="text-center text-white-50 small">
+                <p class="mb-0">© 2026 Ventrly AI Security. כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTop" class="scroll-to-top"><i class="bi bi-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
